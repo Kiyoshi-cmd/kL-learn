@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kL - KiyoLanguage Showcase</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f2f5f8;
+      color: #232946;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #232946;
+      color: #fff;
+      padding: 2rem 1rem 1.5rem 1rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      color: #2d5dcc;
+      margin-top: 2em;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 12px #0001;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.2rem;
+    }
+    th, td {
+      padding: 0.6em 0.8em;
+      border-bottom: 1px solid #e6eaf0;
+      text-align: left;
+    }
+    th {
+      background: #e4e8f7;
+      font-weight: bold;
+    }
+    code {
+      background: #f2f5fa;
+      padding: 0.2em 0.5em;
+      border-radius: 5px;
+      color: #232946;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      font-size: 1em;
+    }
+    .example-block {
+      background: #f6fafe;
+      border-left: 4px solid #2d5dcc;
+      padding: 1em 1.5em;
+      margin: 1em 0;
+      border-radius: 0.4em;
+      font-size: 1.1em;
+    }
+    @media (max-width: 600px) {
+      main { padding: 1em; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>kL &ndash; KiyoLanguage</h1>
+    <p>A constructed language by <b>Kiyoshi</b></p>
+    <p><code>kL</code> is a minimalist symbolic language for concise and creative communication.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Quick Basics</h2>
+      <table>
+        <tr><th>kL</th><th>Meaning</th></tr>
+        <tr><td><code>! hi</code></td><td>greeting</td></tr>
+        <tr><td><code>!- bye</code></td><td>farewell</td></tr>
+        <tr><td><code>#(initial)</code></td><td>person (by initial)</td></tr>
+        <tr><td><code>I</code></td><td>yourself</td></tr>
+        <tr><td><code>U</code></td><td>you</td></tr>
+        <tr><td><code>M</code></td><td>male</td></tr>
+        <tr><td><code>F</code></td><td>female</td></tr>
+        <tr><td><code>&lt;&gt;*</code></td><td>over there</td></tr>
+        <tr><td><code>*</code></td><td>their</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Core Operators & Concepts</h2>
+      <table>
+        <tr><th>kL</th><th>Meaning</th></tr>
+        <tr><td><code>-</code></td><td>not/disagree</td></tr>
+        <tr><td><code>+</code></td><td>agree</td></tr>
+        <tr><td><code>:</code></td><td>or</td></tr>
+        <tr><td><code>&amp;</code></td><td>and</td></tr>
+        <tr><td><code>&lt;&gt;</code></td><td>far</td></tr>
+        <tr><td><code>&gt;&lt;</code></td><td>close</td></tr>
+        <tr><td><code>L^</code></td><td>laughing</td></tr>
+        <tr><td><code>I=&lt;</code></td><td>I already knew</td></tr>
+        <tr><td><code>~</code></td><td>time (<code>~1m</code> = 1 minute, <code>~1d</code> = 1 day)</td></tr>
+        <tr><td><code>-~</code></td><td>look!</td></tr>
+        <tr><td><code>kL</code></td><td>kiyo language</td></tr>
+        <tr><td><code>t#</code></td><td>thank you</td></tr>
+        <tr><td><code>k^</code></td><td>ok / understand</td></tr>
+        <tr><td><code>=S</code></td><td>said</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Advanced Structures</h2>
+      <table>
+        <tr><th>kL</th><th>Meaning</th></tr>
+        <tr><td><code>Cos</code></td><td>cause</td></tr>
+        <tr><td><code>s()</code></td><td>says the input (e.g. <code>s(hi)</code>)</td></tr>
+        <tr><td><code>if</code></td><td>only if (<code>if(U=...)</code>)</td></tr>
+        <tr><td><code>else()</code></td><td>else/alternate (<code>else(=...)</code>)</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Variables & Logic</h2>
+      <table>
+        <tr><th>kL</th><th>Meaning</th></tr>
+        <tr><td><code>=</code></td><td>is / assign</td></tr>
+        <tr><td><code>≠</code></td><td>isn't / not equal to</td></tr>
+        <tr><td><code>&lt;</code></td><td>less</td></tr>
+        <tr><td><code>&gt;</code></td><td>more</td></tr>
+        <tr><td><code>^</code></td><td>positive</td></tr>
+        <tr><td><code>?</code></td><td>question (at start)</td></tr>
+        <tr><td><code>D</code></td><td>dumb</td></tr>
+        <tr><td><code>S</code></td><td>smart</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Example Phrases</h2>
+      <div class="example-block">
+        <p><code>! hi</code> <b>&rarr;</b> Hello!</p>
+        <p><code>!- bye</code> <b>&rarr;</b> Goodbye!</p>
+        <p><code>I=U</code> <b>&rarr;</b> I am you</p>
+        <p><code>! U=+</code> <b>&rarr;</b> Hi, I agree with you</p>
+        <p><code>?U=s(hi)</code> <b>&rarr;</b> Did you say hi?</p>
+        <p><code>I=k^</code> <b>&rarr;</b> I understand / Ok</p>
+        <p><code>I=L^</code> <b>&rarr;</b> I am laughing!</p>
+        <p><code>if(U=F)</code> <b>&rarr;</b> Only if you are female</p>
+        <p><code>else(I=M)</code> <b>&rarr;</b> Else I am male</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How To Use kL</h2>
+      <ul>
+        <li>Combine symbols and operators to express thoughts concisely.</li>
+        <li>Use <code>?</code> at the start for questions.</li>
+        <li>Chain statements with <code>&amp;</code> (and), <code>:</code> (or), <code>else()</code> for alternatives.</li>
+        <li>Use variable assignment (<code>=</code>, <code>≠</code>) for logic and conditions.</li>
+        <li>Add context with <code>~</code> for time, <code>L^</code> for laughing, you can even define Your own variable(s) with "#"</li>
+      </ul>
+    </section>
+    <hr>
+    <footer style="text-align:center; color:#888; font-size:0.95em;">
+      Created by Kiyoshi | <span style="font-family:monospace;">kL</span>: The KiyoLanguage
+    </footer>
+  </main>
+</body>
+  </html>
